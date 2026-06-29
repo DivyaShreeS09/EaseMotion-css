@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desalination Plant Clean Water Distribution Grid DS</title>
+  <link rel="stylesheet" href="../../../easemotion.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="control-deck">
+    <section class="masthead ease-card ease-card-glass ease-fade-in">
+      <div class="masthead-copy">
+        <p class="eyebrow">Distribution Intelligence Suite</p>
+        <h1>Desalination Plant Clean Water Distribution Grid</h1>
+        <p class="intro">
+          A premium water-infrastructure command surface for tracking ocean intake, desalination throughput,
+          quality assurance, storage readiness, and clean-water distribution across civic and industrial endpoints.
+        </p>
+
+        <div class="masthead-actions">
+          <a class="ease-btn ease-btn-primary ease-btn-pill ease-hover-glow" href="#command-panel">Open Command Panel</a>
+          <a class="ease-btn ease-btn-outline ease-btn-pill" href="#quality-suite">Check Quality Suite</a>
+        </div>
+
+        <div class="signal-ribbon">
+          <span class="signal-pill">Salinity Reduced</span>
+          <span class="signal-pill">Clean Water Output</span>
+          <span class="signal-pill">Pump Stable</span>
+          <span class="signal-pill">Quality Verified</span>
+        </div>
+      </div>
+
+      <aside class="hero-sidebar">
+        <article class="hero-stat ease-hover-lift">
+          <span>Purity</span>
+          <strong>99.84%</strong>
+          <small>Post-RO stabilized</small>
+        </article>
+        <article class="hero-stat ease-hover-lift">
+          <span>Dispatch</span>
+          <strong>13.1 ML/h</strong>
+          <small>Peak-balanced output</small>
+        </article>
+        <article class="hero-stat ease-hover-lift">
+          <span>Coverage</span>
+          <strong>96 sectors</strong>
+          <small>Urban and peri-urban reach</small>
+        </article>
+      </aside>
+    </section>
+
+    <section class="system-layout">
+      <section class="plant-theater ease-card ease-card-glass ease-card-hover ease-slide-up">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Central Plant Visualization</p>
+            <h2>Process route and clean-water grid</h2>
+          </div>
+          <p class="section-meta">Animated desalination schematic</p>
+        </div>
+
+        <svg class="schematic" viewBox="0 0 980 620" role="img" aria-label="Desalination plant intake, membrane treatment, storage, pumps, and city distribution nodes">
+          <defs>
+            <linearGradient id="seaGlow" x1="0%" x2="100%" y1="0%" y2="0%">
+              <stop offset="0%" stop-color="#0b5cd7"></stop>
+              <stop offset="100%" stop-color="#38ebff"></stop>
+            </linearGradient>
+            <linearGradient id="streamGlow" x1="0%" x2="100%" y1="0%" y2="0%">
+              <stop offset="0%" stop-color="#7ee7ff"></stop>
+              <stop offset="100%" stop-color="#9effd5"></stop>
+            </linearGradient>
+            <linearGradient id="tankWave" x1="0%" x2="0%" y1="100%" y2="0%">
+              <stop offset="0%" stop-color="#22c7f7"></stop>
+              <stop offset="100%" stop-color="#90ffee"></stop>
+            </linearGradient>
+          </defs>
+
+          <rect x="22" y="20" width="936" height="580" rx="34" class="frame"></rect>
+
+          <g>
+            <rect x="46" y="306" width="170" height="220" rx="30" class="ocean-block"></rect>
+            <path d="M70 366 C98 338 126 392 154 366 C182 340 200 392 216 366" class="surface-line"></path>
+            <path d="M70 410 C98 382 126 436 154 410 C182 384 200 436 216 410" class="surface-line alt"></path>
+            <text x="130" y="340" text-anchor="middle" class="svg-title">Ocean Intake</text>
+          </g>
+
+          <g>
+            <path d="M216 372 C280 372 292 286 346 286" class="pipe"></path>
+            <path d="M216 446 C282 446 294 350 346 350" class="pipe"></path>
+            <path d="M216 372 C280 372 292 286 346 286" class="pipe-flow flow-one" pathLength="100"></path>
+            <path d="M216 446 C282 446 294 350 346 350" class="pipe-flow flow-two" pathLength="100"></path>
+          </g>
+
+          <g>
+            <rect x="346" y="236" width="136" height="176" rx="26" class="module-shell"></rect>
+            <circle cx="414" cy="290" r="34" class="ring large"></circle>
+            <circle cx="414" cy="290" r="18" class="ring small"></circle>
+            <rect x="378" y="340" width="72" height="16" rx="8" class="filter-bar"></rect>
+            <text x="414" y="216" text-anchor="middle" class="svg-title">Filtration Chambers</text>
+          </g>
+
+          <g>
+            <path d="M482 324 L532 324" class="pipe"></path>
+            <path d="M482 324 L532 324" class="pipe-flow flow-three" pathLength="100"></path>
+          </g>
+
+          <g>
+            <rect x="532" y="214" width="184" height="218" rx="32" class="module-shell"></rect>
+            <rect x="572" y="258" width="104" height="24" rx="12" class="membrane"></rect>
+            <rect x="572" y="304" width="104" height="24" rx="12" class="membrane secondary"></rect>
+            <rect x="572" y="350" width="104" height="24" rx="12" class="membrane"></rect>
+            <text x="624" y="194" text-anchor="middle" class="svg-title">Reverse Osmosis Arrays</text>
+          </g>
+
+          <g>
+            <path d="M716 324 C754 324 770 324 792 324" class="pipe"></path>
+            <path d="M716 324 C754 324 770 324 792 324" class="pipe-flow flow-four" pathLength="100"></path>
+          </g>
+
+          <g>
+            <rect x="792" y="204" width="124" height="244" rx="28" class="module-shell"></rect>
+            <rect x="814" y="296" width="80" height="132" rx="18" fill="url(#tankWave)" opacity="0.92"></rect>
+            <text x="854" y="184" text-anchor="middle" class="svg-title">Clean Storage Tank</text>
+          </g>
+
+          <g>
+            <path d="M854 448 L854 520 L638 520" class="pipe"></path>
+            <path d="M638 520 L456 520" class="pipe"></path>
+            <path d="M638 520 L638 146 L776 146" class="pipe"></path>
+            <path d="M854 448 L854 520 L638 520" class="pipe-flow flow-five" pathLength="100"></path>
+            <path d="M638 520 L456 520" class="pipe-flow flow-six" pathLength="100"></path>
+            <path d="M638 520 L638 146 L776 146" class="pipe-flow flow-seven" pathLength="100"></path>
+          </g>
+
+          <g>
+            <circle cx="638" cy="520" r="25" class="station-core"></circle>
+            <circle cx="638" cy="520" r="40" class="station-pulse"></circle>
+            <text x="638" y="562" text-anchor="middle" class="svg-caption">Pump Station A</text>
+          </g>
+          <g>
+            <circle cx="456" cy="520" r="25" class="station-core"></circle>
+            <circle cx="456" cy="520" r="40" class="station-pulse"></circle>
+            <text x="456" y="562" text-anchor="middle" class="svg-caption">Reservoir Pump B</text>
+          </g>
+          <g>
+            <circle cx="776" cy="146" r="20" class="endpoint-core"></circle>
+            <circle cx="776" cy="146" r="34" class="endpoint-pulse"></circle>
+            <text x="776" y="118" text-anchor="middle" class="svg-caption">City North</text>
+          </g>
+          <g>
+            <circle cx="430" cy="520" r="16" class="endpoint-core"></circle>
+            <circle cx="430" cy="520" r="30" class="endpoint-pulse"></circle>
+            <text x="430" y="594" text-anchor="middle" class="svg-caption">Community South</text>
+          </g>
+          <g>
+            <circle cx="676" cy="520" r="16" class="endpoint-core"></circle>
+            <circle cx="676" cy="520" r="30" class="endpoint-pulse"></circle>
+            <text x="676" y="594" text-anchor="middle" class="svg-caption">Industrial West</text>
+          </g>
+        </svg>
+      </section>
+
+      <aside class="ops-column">
+        <section class="ops-card telemetry-wall ease-card ease-card-glass ease-card-hover ease-slide-up">
+          <div class="section-head compact">
+            <div>
+              <p class="section-label">Live Telemetry Grid</p>
+              <h2>Primary readings</h2>
+            </div>
+          </div>
+
+          <div class="telemetry-grid">
+            <article><span>Intake Salinity</span><strong>36.1 ppt</strong></article>
+            <article><span>Output Purity</span><strong>99.84%</strong></article>
+            <article><span>Flow Rate</span><strong>13.1 ML/h</strong></article>
+            <article><span>Pump Pressure</span><strong>6.7 bar</strong></article>
+            <article><span>Reservoir Level</span><strong>81%</strong></article>
+            <article><span>Membrane Health</span><strong>93%</strong></article>
+            <article><span>Energy Usage</span><strong>18.2 MW</strong></article>
+            <article><span>Distribution Coverage</span><strong>98.9%</strong></article>
+            <article><span>Turbidity</span><strong>0.07 NTU</strong></article>
+            <article><span>pH Level</span><strong>7.2</strong></article>
+          </div>
+        </section>
+
+        <section id="command-panel" class="ops-card command-suite ease-card ease-card-glass ease-card-hover ease-slide-up">
+          <div class="section-head compact">
+            <div>
+              <p class="section-label">Control Panel Buttons</p>
+              <h2>Operator actions</h2>
+            </div>
+          </div>
+
+          <div class="command-grid">
+            <button class="ease-btn ease-btn-primary ease-btn-pill" type="button">Boost Throughput</button>
+            <button class="ease-btn ease-btn-success ease-btn-pill" type="button">Run Quality Sweep</button>
+            <button class="ease-btn ease-btn-outline ease-btn-pill" type="button">Balance Storage</button>
+            <button class="ease-btn ease-btn-ghost ease-btn-pill" type="button">Open Maintenance Window</button>
+          </div>
+        </section>
+      </aside>
+    </section>
+
+    <section class="data-band">
+      <section id="quality-suite" class="data-card ease-card ease-card-glass ease-card-hover ease-slide-up">
+        <div class="section-head compact">
+          <div>
+            <p class="section-label">Water Quality Indicators</p>
+            <h2>Purity suite</h2>
+          </div>
+        </div>
+        <div class="meter-list">
+          <div class="meter-row"><span>Purity score</span><b>99.84%</b><div class="meter"><i style="--fill:99.84%"></i></div></div>
+          <div class="meter-row"><span>Turbidity control</span><b>0.07 NTU</b><div class="meter"><i style="--fill:91%"></i></div></div>
+          <div class="meter-row"><span>pH stability</span><b>7.2</b><div class="meter"><i style="--fill:87%"></i></div></div>
+          <div class="meter-row"><span>Mineral tune</span><b>Balanced</b><div class="meter"><i style="--fill:82%"></i></div></div>
+        </div>
+      </section>
+
+      <section class="data-card ease-card ease-card-glass ease-card-hover ease-slide-up">
+        <div class="section-head compact">
+          <div>
+            <p class="section-label">Pump Station Status Cards</p>
+            <h2>Station health</h2>
+          </div>
+        </div>
+        <div class="station-cards">
+          <article class="station-card"><h3>Pump Station A</h3><p>Arterial supply to coastal sectors is balanced and stable.</p><span>6.7 bar • 74% load</span></article>
+          <article class="station-card"><h3>Pump Station B</h3><p>Reservoir outflow synchronized with midday demand curve.</p><span>6.3 bar • 67% load</span></article>
+          <article class="station-card"><h3>Pump Station C</h3><p>Booster branch held ready for evening city acceleration.</p><span>5.9 bar • 46% load</span></article>
+        </div>
+      </section>
+
+      <section class="data-card ease-card ease-card-glass ease-card-hover ease-slide-up">
+        <div class="section-head compact">
+          <div>
+            <p class="section-label">Reservoir / Storage Level Cards</p>
+            <h2>Clean-water reserves</h2>
+          </div>
+        </div>
+        <div class="reserve-grid">
+          <article><span>Tank Alpha</span><strong>81%</strong><div class="tank"><i style="--fill:81%"></i></div></article>
+          <article><span>Tank Beta</span><strong>66%</strong><div class="tank"><i style="--fill:66%"></i></div></article>
+          <article><span>Emergency Cell</span><strong>94%</strong><div class="tank"><i style="--fill:94%"></i></div></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="insight-band">
+      <section class="insight-card ease-card ease-card-glass ease-card-hover ease-slide-up">
+        <div class="section-head compact">
+          <div>
+            <p class="section-label">Energy Usage and Flow Rate Charts</p>
+            <h2>System draw and dispatch</h2>
+          </div>
+        </div>
+
+        <div class="chart-wrap">
+          <svg viewBox="0 0 340 130" class="trend-chart" role="img" aria-label="Energy usage trend line">
+            <defs>
+              <linearGradient id="energyStroke" x1="0%" x2="100%" y1="0%" y2="0%">
+                <stop offset="0%" stop-color="#52e5ff"></stop>
+                <stop offset="100%" stop-color="#8dffd3"></stop>
+              </linearGradient>
+            </defs>
+            <path d="M20 98 C48 88 62 44 92 48 C122 52 140 84 170 74 C200 64 214 28 246 34 C278 40 294 58 320 24" class="chart-back"></path>
+            <path d="M20 98 C48 88 62 44 92 48 C122 52 140 84 170 74 C200 64 214 28 246 34 C278 40 294 58 320 24" class="chart-front"></path>
+          </svg>
+          <div class="flow-columns" aria-label="Flow rate bar chart">
+            <i style="--rise:74%"></i>
+            <i style="--rise:88%"></i>
+            <i style="--rise:63%"></i>
+            <i style="--rise:96%"></i>
+            <i style="--rise:78%"></i>
+            <i style="--rise:85%"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="insight-card ease-card ease-card-glass ease-card-hover ease-slide-up">
+        <div class="section-head compact">
+          <div>
+            <p class="section-label">Alerts / Maintenance Timeline</p>
+            <h2>Shift events</h2>
+          </div>
+        </div>
+
+        <ol class="timeline">
+          <li><time>05:50</time><div><strong>Intake gate sweep complete</strong><p>Marine debris filter cleared before the morning demand ramp.</p></div></li>
+          <li><time>08:20</time><div><strong>RO lane recalibrated</strong><p>Membrane lane three tuned for improved energy-per-liter efficiency.</p></div></li>
+          <li><time>12:15</time><div><strong>Quality lab sign-off</strong><p>Purity, pH, and turbidity passed premium potable thresholds.</p></div></li>
+          <li><time>15:40</time><div><strong>Storage balancing queued</strong><p>Alpha and Beta tanks prepared for evening redistribution loads.</p></div></li>
+        </ol>
+      </section>
+    </section>
+
+    <footer class="submission-footer ease-card ease-card-glass">
+      <p>Clean-water distribution dashboard with inline SVG plant mapping, operational telemetry, and command-ready monitoring panels.</p>
+    </footer>
+  </main>
+</body>
+</html>
